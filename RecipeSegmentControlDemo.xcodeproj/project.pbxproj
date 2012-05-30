@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8B92598DA19A655C495E5A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5A3 /* UIKit.framework */; };
+		E8B92598DA19A655C495E5A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5A5 /* Foundation.framework */; };
+		E8B92598DA19A655C495E5A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5A7 /* CoreGraphics.framework */; };
+		E8B92598DA19A655C495E5AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5AD /* InfoPlist.strings */; };
+		E8B92598DA19A655C495E5B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5AF /* main.m */; };
+		E8B92598DA19A655C495E5B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5B3 /* AppDelegate.m */; };
+		E8B92598DA19A655C495E5B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5B6 /* ViewController.m */; };
+		E8B92598DA19A655C495E5BA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5B9 /* ViewController.xib */; };
+		E8B92598DA19A655C495E5BE /* RecipeSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5BD /* RecipeSegmentControl.m */; };
+		E8B92598DA19A655C495E5C1 /* recipe_tab_1_active.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5C0 /* recipe_tab_1_active.png */; };
+		E8B92598DA19A655C495E5C3 /* recipe_tab_1_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5C2 /* recipe_tab_1_active@2x.png */; };
+		E8B92598DA19A655C495E5C5 /* recipe_tab_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5C4 /* recipe_tab_1.png */; };
+		E8B92598DA19A655C495E5C7 /* recipe_tab_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5C6 /* recipe_tab_1@2x.png */; };
+		E8B92598DA19A655C495E5C9 /* recipe_tab_2_active.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5C8 /* recipe_tab_2_active.png */; };
+		E8B92598DA19A655C495E5CB /* recipe_tab_2_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5CA /* recipe_tab_2_active@2x.png */; };
+		E8B92598DA19A655C495E5CD /* recipe_tab_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5CC /* recipe_tab_2.png */; };
+		E8B92598DA19A655C495E5CF /* recipe_tab_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5CE /* recipe_tab_2@2x.png */; };
+		E8B92598DA19A655C495E5D1 /* recipe_tab_3_active.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5D0 /* recipe_tab_3_active.png */; };
+		E8B92598DA19A655C495E5D3 /* recipe_tab_3_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5D2 /* recipe_tab_3_active@2x.png */; };
+		E8B92598DA19A655C495E5D5 /* recipe_tab_3.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5D4 /* recipe_tab_3.png */; };
+		E8B92598DA19A655C495E5D7 /* recipe_tab_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5D6 /* recipe_tab_3@2x.png */; };
+		E8B92598DA19A655C495E5D9 /* bg_pattern_wood.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5D8 /* bg_pattern_wood.png */; };
+		E8B92598DA19A655C495E5DB /* bg_pattern_wood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5DA /* bg_pattern_wood@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8B92598DA19A655C495E59A /* RecipeSegmentControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeSegmentControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B92598DA19A655C495E5A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E8B92598DA19A655C495E5A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E8B92598DA19A655C495E5A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E8B92598DA19A655C495E5AB /* RecipeSegmentControlDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "RecipeSegmentControlDemo-Info.plist"; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5B1 /* RecipeSegmentControlDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecipeSegmentControlDemo-Prefix.pch"; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5BC /* RecipeSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeSegmentControl.h; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5BD /* RecipeSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeSegmentControl.m; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5C0 /* recipe_tab_1_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipe_tab_1_active.png; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5C2 /* recipe_tab_1_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipe_tab_1_active@2x.png"; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5C4 /* recipe_tab_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipe_tab_1.png; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5C6 /* recipe_tab_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipe_tab_1@2x.png"; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5C8 /* recipe_tab_2_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipe_tab_2_active.png; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5CA /* recipe_tab_2_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipe_tab_2_active@2x.png"; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5CC /* recipe_tab_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipe_tab_2.png; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5CE /* recipe_tab_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipe_tab_2@2x.png"; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5D0 /* recipe_tab_3_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipe_tab_3_active.png; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5D2 /* recipe_tab_3_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipe_tab_3_active@2x.png"; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5D4 /* recipe_tab_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipe_tab_3.png; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5D6 /* recipe_tab_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recipe_tab_3@2x.png"; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5D8 /* bg_pattern_wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_pattern_wood.png; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5DA /* bg_pattern_wood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_pattern_wood@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8B92598DA19A655C495E5A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B92598DA19A655C495E5A4 /* UIKit.framework in Frameworks */,
+				E8B92598DA19A655C495E5A6 /* Foundation.framework in Frameworks */,
+				E8B92598DA19A655C495E5A8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8B92598DA19A655C495E596 = {
+			isa = PBXGroup;
+			children = (
+				E8B92598DA19A655C495E597 /* Products */,
+				E8B92598DA19A655C495E5A2 /* Frameworks */,
+				E8B92598DA19A655C495E5A9 /* RecipeSegmentControlDemo */,
+			);
+			sourceTree = "<group>";
+		};
+		E8B92598DA19A655C495E597 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8B92598DA19A655C495E59A /* RecipeSegmentControlDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8B92598DA19A655C495E5A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8B92598DA19A655C495E5A7 /* CoreGraphics.framework */,
+				E8B92598DA19A655C495E5A5 /* Foundation.framework */,
+				E8B92598DA19A655C495E5A3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8B92598DA19A655C495E5A9 /* RecipeSegmentControlDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E8B92598DA19A655C495E5B9 /* ViewController.xib */,
+				E8B92598DA19A655C495E5B6 /* ViewController.m */,
+				E8B92598DA19A655C495E5B5 /* ViewController.h */,
+				E8B92598DA19A655C495E5B3 /* AppDelegate.m */,
+				E8B92598DA19A655C495E5B2 /* AppDelegate.h */,
+				E8B92598DA19A655C495E5AA /* Supporting Files */,
+				E8B92598DA19A655C495E5BB /* RecipeSegmentControl */,
+				E8B92598DA19A655C495E5BF /* Resources */,
+			);
+			path = RecipeSegmentControlDemo;
+			sourceTree = "<group>";
+		};
+		E8B92598DA19A655C495E5AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8B92598DA19A655C495E5B1 /* RecipeSegmentControlDemo-Prefix.pch */,
+				E8B92598DA19A655C495E5AF /* main.m */,
+				E8B92598DA19A655C495E5AD /* InfoPlist.strings */,
+				E8B92598DA19A655C495E5AB /* RecipeSegmentControlDemo-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8B92598DA19A655C495E5BB /* RecipeSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				E8B92598DA19A655C495E5BD /* RecipeSegmentControl.m */,
+				E8B92598DA19A655C495E5BC /* RecipeSegmentControl.h */,
+			);
+			path = RecipeSegmentControl;
+			sourceTree = "<group>";
+		};
+		E8B92598DA19A655C495E5BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8B92598DA19A655C495E5DA /* bg_pattern_wood@2x.png */,
+				E8B92598DA19A655C495E5D8 /* bg_pattern_wood.png */,
+				E8B92598DA19A655C495E5D6 /* recipe_tab_3@2x.png */,
+				E8B92598DA19A655C495E5D4 /* recipe_tab_3.png */,
+				E8B92598DA19A655C495E5D2 /* recipe_tab_3_active@2x.png */,
+				E8B92598DA19A655C495E5D0 /* recipe_tab_3_active.png */,
+				E8B92598DA19A655C495E5CE /* recipe_tab_2@2x.png */,
+				E8B92598DA19A655C495E5CC /* recipe_tab_2.png */,
+				E8B92598DA19A655C495E5CA /* recipe_tab_2_active@2x.png */,
+				E8B92598DA19A655C495E5C8 /* recipe_tab_2_active.png */,
+				E8B92598DA19A655C495E5C6 /* recipe_tab_1@2x.png */,
+				E8B92598DA19A655C495E5C4 /* recipe_tab_1.png */,
+				E8B92598DA19A655C495E5C2 /* recipe_tab_1_active@2x.png */,
+				E8B92598DA19A655C495E5C0 /* recipe_tab_1_active.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8B92598DA19A655C495E59B /* RecipeSegmentControlDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B92598DA19A655C495E59C /* Build configuration list for PBXNativeTarget "RecipeSegmentControlDemo" */;
+			buildPhases = (
+				E8B92598DA19A655C495E59F /* Sources */,
+				E8B92598DA19A655C495E5A0 /* Frameworks */,
+				E8B92598DA19A655C495E5A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecipeSegmentControlDemo;
+			productName = RecipeSegmentControlDemo;
+			productReference = E8B92598DA19A655C495E59A /* RecipeSegmentControlDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8B92598DA19A655C495E594 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E8B92598DA19A655C495E595 /* Build configuration list for PBXProject "RecipeSegmentControlDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8B92598DA19A655C495E596;
+			productRefGroup = E8B92598DA19A655C495E597 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8B92598DA19A655C495E59B /* RecipeSegmentControlDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8B92598DA19A655C495E5A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B92598DA19A655C495E5AE /* InfoPlist.strings in Resources */,
+				E8B92598DA19A655C495E5BA /* ViewController.xib in Resources */,
+				E8B92598DA19A655C495E5C1 /* recipe_tab_1_active.png in Resources */,
+				E8B92598DA19A655C495E5C3 /* recipe_tab_1_active@2x.png in Resources */,
+				E8B92598DA19A655C495E5C5 /* recipe_tab_1.png in Resources */,
+				E8B92598DA19A655C495E5C7 /* recipe_tab_1@2x.png in Resources */,
+				E8B92598DA19A655C495E5C9 /* recipe_tab_2_active.png in Resources */,
+				E8B92598DA19A655C495E5CB /* recipe_tab_2_active@2x.png in Resources */,
+				E8B92598DA19A655C495E5CD /* recipe_tab_2.png in Resources */,
+				E8B92598DA19A655C495E5CF /* recipe_tab_2@2x.png in Resources */,
+				E8B92598DA19A655C495E5D1 /* recipe_tab_3_active.png in Resources */,
+				E8B92598DA19A655C495E5D3 /* recipe_tab_3_active@2x.png in Resources */,
+				E8B92598DA19A655C495E5D5 /* recipe_tab_3.png in Resources */,
+				E8B92598DA19A655C495E5D7 /* recipe_tab_3@2x.png in Resources */,
+				E8B92598DA19A655C495E5D9 /* bg_pattern_wood.png in Resources */,
+				E8B92598DA19A655C495E5DB /* bg_pattern_wood@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8B92598DA19A655C495E59F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B92598DA19A655C495E5B0 /* main.m in Sources */,
+				E8B92598DA19A655C495E5B4 /* AppDelegate.m in Sources */,
+				E8B92598DA19A655C495E5B7 /* ViewController.m in Sources */,
+				E8B92598DA19A655C495E5BE /* RecipeSegmentControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8B92598DA19A655C495E5AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B92598DA19A655C495E5AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E8B92598DA19A655C495E5B9 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B92598DA19A655C495E5B8 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8B92598DA19A655C495E598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8B92598DA19A655C495E599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E8B92598DA19A655C495E59D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecipeSegmentControlDemo/RecipeSegmentControlDemo-Prefix.pch";
+				INFOPLIST_FILE = "RecipeSegmentControlDemo/RecipeSegmentControlDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E8B92598DA19A655C495E59E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecipeSegmentControlDemo/RecipeSegmentControlDemo-Prefix.pch";
+				INFOPLIST_FILE = "RecipeSegmentControlDemo/RecipeSegmentControlDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8B92598DA19A655C495E595 /* Build configuration list for PBXProject "RecipeSegmentControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B92598DA19A655C495E598 /* Release */,
+				E8B92598DA19A655C495E599 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B92598DA19A655C495E59C /* Build configuration list for PBXNativeTarget "RecipeSegmentControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B92598DA19A655C495E59D /* Release */,
+				E8B92598DA19A655C495E59E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8B92598DA19A655C495E594 /* Project object */;
+}
