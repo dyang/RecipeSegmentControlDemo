@@ -10,8 +10,6 @@
 
 @interface SegmentButtonView : UIView
 
-@property(nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
-
 - (SegmentButtonView *)initWithTitle:(NSString *)title
                          normalImage:(UIImage *)normalImage
                       highlightImage:(UIImage *)highlightImage
