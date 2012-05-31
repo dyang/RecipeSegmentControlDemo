@@ -54,6 +54,9 @@
     segment2.frame = CGRectOffset(segment2.frame, segment1.frame.size.width, 0);
     segment3.frame = CGRectOffset(segment3.frame, segment1.frame.size.width + segment2.frame.size.width, 0);
 
+    // Highlight the first segment
+    segment1.highlighted = YES;
+
     [self addSubview:segment1];
     [self addSubview:segment2];
     [self addSubview:segment3];

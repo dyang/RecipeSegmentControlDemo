@@ -10,6 +10,7 @@
 @interface SegmentButtonView : UIView
 
 @property(nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
+@property(nonatomic, assign) BOOL highlighted;
 
 - (SegmentButtonView *)initWithTitle:(NSString *)title
                          normalImage:(UIImage *)normalImage
