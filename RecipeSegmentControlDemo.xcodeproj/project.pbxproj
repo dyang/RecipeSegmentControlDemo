@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6642BAD1577D0E0003B218E /* CustomNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6642BAC1577D0E0003B218E /* CustomNavigationController.xib */; };
 		E8B92598DA19A655C495E5A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5A3 /* UIKit.framework */; };
 		E8B92598DA19A655C495E5A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5A5 /* Foundation.framework */; };
 		E8B92598DA19A655C495E5A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5A7 /* CoreGraphics.framework */; };
@@ -32,9 +33,11 @@
 		E8B92598DA19A655C495E5DB /* bg_pattern_wood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5DA /* bg_pattern_wood@2x.png */; };
 		E8B92598DA19A655C495E5DD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5DC /* QuartzCore.framework */; };
 		E8B92598DA19A655C495E5E0 /* SegmentButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5DF /* SegmentButtonView.m */; };
+		E8B92598DA19A655C495E5E3 /* CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B92598DA19A655C495E5E2 /* CustomNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6642BAC1577D0E0003B218E /* CustomNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationController.xib; sourceTree = "<group>"; };
 		E8B92598DA19A655C495E59A /* RecipeSegmentControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeSegmentControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B92598DA19A655C495E5A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E8B92598DA19A655C495E5A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +70,8 @@
 		E8B92598DA19A655C495E5DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E8B92598DA19A655C495E5DE /* SegmentButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentButtonView.h; sourceTree = "<group>"; };
 		E8B92598DA19A655C495E5DF /* SegmentButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentButtonView.m; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5E1 /* CustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBar.h; sourceTree = "<group>"; };
+		E8B92598DA19A655C495E5E2 /* CustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,9 @@
 		E8B92598DA19A655C495E5A9 /* RecipeSegmentControlDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E6642BAC1577D0E0003B218E /* CustomNavigationController.xib */,
+				E8B92598DA19A655C495E5E2 /* CustomNavigationBar.m */,
+				E8B92598DA19A655C495E5E1 /* CustomNavigationBar.h */,
 				E8B92598DA19A655C495E5B9 /* ViewController.xib */,
 				E8B92598DA19A655C495E5B6 /* ViewController.m */,
 				E8B92598DA19A655C495E5B5 /* ViewController.h */,
@@ -233,6 +241,7 @@
 				E8B92598DA19A655C495E5D7 /* recipe_tab_3@2x.png in Resources */,
 				E8B92598DA19A655C495E5D9 /* bg_pattern_wood.png in Resources */,
 				E8B92598DA19A655C495E5DB /* bg_pattern_wood@2x.png in Resources */,
+				E6642BAD1577D0E0003B218E /* CustomNavigationController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +257,7 @@
 				E8B92598DA19A655C495E5B7 /* ViewController.m in Sources */,
 				E8B92598DA19A655C495E5BE /* RecipeSegmentControl.m in Sources */,
 				E8B92598DA19A655C495E5E0 /* SegmentButtonView.m in Sources */,
+				E8B92598DA19A655C495E5E3 /* CustomNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
