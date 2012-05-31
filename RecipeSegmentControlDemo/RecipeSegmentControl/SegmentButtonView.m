@@ -17,7 +17,6 @@
 @property(nonatomic, strong) UIImage *normalImage;
 @property(nonatomic, strong) UIImage *highlightImage;
 @property(nonatomic, assign) id <SegmentButtonViewDelegate> delegate;
-@property(nonatomic, assign) BOOL highlighted;
 
 - (void)expandSegment:(BOOL)animation;
 - (void)collapseSegment:(BOOL)animation;
@@ -32,7 +31,6 @@
 @synthesize imageView = _imageView;
 @synthesize tapGestureRecognizer = _tapGestureRecognizer;
 @synthesize delegate = _delegate;
-@synthesize highlighted = _highlighted;
 
 - (SegmentButtonView *)initWithTitle:(NSString *)title
                          normalImage:(UIImage *)normalImage
@@ -63,14 +61,13 @@
 
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
     // Nothing happens if we already have the desired highlight status.
-    if (self.highlighted == highlighted) return;
+    if (self.imageView.highlighted == highlighted) return;
 
     if (highlighted) {
         [self expandSegment:animated];
     } else {
         [self collapseSegment:animated];
     }
-    self.highlighted = highlighted;
 }
 
 - (void)expandSegment:(BOOL)animation {
