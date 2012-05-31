@@ -42,20 +42,23 @@
 - (void)setUpSegmentButtons {
     SegmentButtonView *segment1 = [[SegmentButtonView alloc] initWithTitle:@"Summary"
                                                                normalImage:[UIImage imageNamed:@"recipe_tab_1.png"]
-            highlightImage:[UIImage imageNamed:@"recipe_tab_1_active.png"]];
+            highlightImage:[UIImage imageNamed:@"recipe_tab_1_active.png"]
+            delegate:self];
     SegmentButtonView *segment2 = [[SegmentButtonView alloc] initWithTitle:@"You'll need"
                                                                normalImage:[UIImage imageNamed:@"recipe_tab_2.png"]
-            highlightImage:[UIImage imageNamed:@"recipe_tab_2_active.png"]];
+            highlightImage:[UIImage imageNamed:@"recipe_tab_2_active.png"]
+            delegate:self];
     SegmentButtonView *segment3 = [[SegmentButtonView alloc] initWithTitle:@"Steps"
                                                                normalImage:[UIImage imageNamed:@"recipe_tab_3.png"]
-            highlightImage:[UIImage imageNamed:@"recipe_tab_3_active.png"]];
+            highlightImage:[UIImage imageNamed:@"recipe_tab_3_active.png"]
+            delegate:self];
 
     segment1.frame = CGRectOffset(segment1.frame, 0, 0);
     segment2.frame = CGRectOffset(segment2.frame, segment1.frame.size.width, 0);
     segment3.frame = CGRectOffset(segment3.frame, segment1.frame.size.width + segment2.frame.size.width, 0);
 
     // Highlight the first segment
-    segment1.highlighted = YES;
+    [segment1 setHighlighted:YES animated:NO];
 
     [self addSubview:segment1];
     [self addSubview:segment2];
@@ -64,5 +67,16 @@
     self.segmentButtons = [NSArray arrayWithObjects:segment1, segment2, segment3, nil];
 }
 
+#pragma mark - SegmentButtonViewDelegate
+
+- (void)segmentButtonHighlighted:(SegmentButtonView *)highlightedSegmentButton {
+    for (SegmentButtonView *segmentButton in self.segmentButtons) {
+        if ([segmentButton isEqual:highlightedSegmentButton]) {
+            [segmentButton setHighlighted:YES animated:YES];
+        } else {
+            [segmentButton setHighlighted:NO animated:YES];
+        }
+    }
+}
 
 @end

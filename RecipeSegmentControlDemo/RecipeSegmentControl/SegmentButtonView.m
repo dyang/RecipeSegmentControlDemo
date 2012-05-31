@@ -9,15 +9,18 @@
 #import "SegmentButtonView.h"
 
 #define IMAGE_TOP_OFFSET 12
-#define SLIDE_DURATION 0.4
+#define ANIMATION_DURATION 0.2
 
 @interface SegmentButtonView ()
 
 @property(nonatomic, strong) UIImageView *imageView;
 @property(nonatomic, strong) UIImage *normalImage;
 @property(nonatomic, strong) UIImage *highlightImage;
+@property(nonatomic, assign) id <SegmentButtonViewDelegate> delegate;
+@property(nonatomic, assign) BOOL highlighted;
 
-- (void)highlightSegment:(BOOL)animation;
+- (void)expandSegment:(BOOL)animation;
+- (void)collapseSegment:(BOOL)animation;
 - (void)segmentTapped;
 
 @end
@@ -28,15 +31,18 @@
 @synthesize highlightImage = _highlightImage;
 @synthesize imageView = _imageView;
 @synthesize tapGestureRecognizer = _tapGestureRecognizer;
+@synthesize delegate = _delegate;
 @synthesize highlighted = _highlighted;
 
 - (SegmentButtonView *)initWithTitle:(NSString *)title
                          normalImage:(UIImage *)normalImage
-                      highlightImage:(UIImage *)highlightImage {
+                      highlightImage:(UIImage *)highlightImage
+                            delegate:(id <SegmentButtonViewDelegate>)delegate {
     self = [super init];
     if (self) {
         self.normalImage = normalImage;
         self.highlightImage = highlightImage;
+        self.delegate = delegate;
 
         // Set up images to display
         self.imageView = [[UIImageView alloc] initWithImage:self.normalImage
@@ -55,18 +61,21 @@
     return self;
 }
 
-- (void)setHighlighted:(BOOL)aHighlighted {
-    [self highlightSegment:NO];
-    _highlighted = aHighlighted;
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
+    // Nothing happens if we already have the desired highlight status.
+    if (self.highlighted == highlighted) return;
+
+    if (highlighted) {
+        [self expandSegment:animated];
+    } else {
+        [self collapseSegment:animated];
+    }
+    self.highlighted = highlighted;
 }
 
-- (void)highlightSegment:(BOOL)animated {
-    // Do nothing if the current segment is already highlighted
-    if (self.highlighted) return;
-
-
-    NSTimeInterval slideDuration = animated ? SLIDE_DURATION : 0;
-    [UIView animateWithDuration:slideDuration delay:0
+- (void)expandSegment:(BOOL)animation {
+    NSTimeInterval animationDuration = animation ? ANIMATION_DURATION : 0;
+    [UIView animateWithDuration:animationDuration delay:0
                         options:UIViewAnimationOptionCurveEaseIn animations:^void() {
         self.imageView.frame = CGRectOffset(self.imageView.frame, 0, IMAGE_TOP_OFFSET);
     }                completion:^void(BOOL finished) {
@@ -75,8 +84,22 @@
     }];
 }
 
+- (void)collapseSegment:(BOOL)animation {
+    NSTimeInterval animationDuration = animation ? ANIMATION_DURATION : 0;
+    [UIView animateWithDuration:animationDuration delay:0
+                        options:UIViewAnimationOptionCurveEaseIn animations:^void() {
+        self.imageView.frame = CGRectOffset(self.imageView.frame, 0, -IMAGE_TOP_OFFSET);
+    }                completion:^void(BOOL finished) {
+        // Update image
+        self.imageView.highlighted = NO;
+    }];
+}
+
 - (void)segmentTapped {
-    [self highlightSegment:YES];
+    // Notify delegate for post processing
+    if (self.delegate && [self.delegate respondsToSelector:@selector(segmentButtonHighlighted:)]) {
+        [self.delegate segmentButtonHighlighted:self];
+    }
 }
 
 - (void)dealloc {

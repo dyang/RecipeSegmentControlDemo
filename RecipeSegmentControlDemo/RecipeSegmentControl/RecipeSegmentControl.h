@@ -7,7 +7,8 @@
 //
 
 
+#import "SegmentButtonView.h"
 
-@interface RecipeSegmentControl : UIView
+@interface RecipeSegmentControl : UIView <SegmentButtonViewDelegate>
 
 @end
