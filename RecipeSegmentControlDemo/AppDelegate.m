@@ -19,6 +19,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
     UINavigationController *nav = [[[NSBundle mainBundle] loadNibNamed:@"CustomNavigationController" owner:self options:nil] objectAtIndex:0];
     [nav setViewControllers:[NSArray arrayWithObject:[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil]]];
     self.window.rootViewController = nav;
