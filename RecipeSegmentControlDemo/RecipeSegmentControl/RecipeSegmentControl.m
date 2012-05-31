@@ -6,25 +6,60 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <CoreGraphics/CoreGraphics.h>
 #import "RecipeSegmentControl.h"
+#import "SegmentButtonView.h"
+#import <QuartzCore/QuartzCore.h>
+
+@interface RecipeSegmentControl ()
+
+@property (nonatomic, strong) NSArray *segmentButtons;
+
+- (void)setUpSegmentButtons;
+
+@end
 
 @implementation RecipeSegmentControl
+
+@synthesize segmentButtons = _segmentButtons;
 
 - (id)init {
     self = [super init];
     if (self) {
-        //[[UIScreen mainScreen] applicationFrame].size.width
+        // Set up layer in order to clip any drawing that is done outside of self.bounds
+        self.layer.masksToBounds = YES;
+
+        // Set up segment buttons
+        [self setUpSegmentButtons];
+
+        self.backgroundColor = [UIColor clearColor];
+        self.frame = CGRectMake(0, 0,
+                [[UIScreen mainScreen] applicationFrame].size.width,
+                [UIImage imageNamed:@"recipe_tab_1.png"].size.height);
     }
     return self;
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+
+- (void)setUpSegmentButtons {
+    SegmentButtonView *segment1 = [[SegmentButtonView alloc] initWithTitle:@"Summary"
+                                                               normalImage:[UIImage imageNamed:@"recipe_tab_1.png"]
+            highlightImage:[UIImage imageNamed:@"recipe_tab_1_active.png"]];
+    SegmentButtonView *segment2 = [[SegmentButtonView alloc] initWithTitle:@"You'll need"
+                                                               normalImage:[UIImage imageNamed:@"recipe_tab_2.png"]
+            highlightImage:[UIImage imageNamed:@"recipe_tab_2_active.png"]];
+    SegmentButtonView *segment3 = [[SegmentButtonView alloc] initWithTitle:@"Steps"
+                                                               normalImage:[UIImage imageNamed:@"recipe_tab_3.png"]
+            highlightImage:[UIImage imageNamed:@"recipe_tab_3_active.png"]];
+
+    segment1.frame = CGRectOffset(segment1.frame, 0, 0);
+    segment2.frame = CGRectOffset(segment2.frame, segment1.frame.size.width, 0);
+    segment3.frame = CGRectOffset(segment3.frame, segment1.frame.size.width + segment2.frame.size.width, 0);
+
+    [self addSubview:segment1];
+    [self addSubview:segment2];
+    [self addSubview:segment3];
+
+    self.segmentButtons = [NSArray arrayWithObjects:segment1, segment2, segment3, nil];
 }
-*/
+
 
 @end

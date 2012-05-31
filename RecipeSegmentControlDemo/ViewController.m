@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RecipeSegmentControl.h"
 
 @interface ViewController ()
 
@@ -20,7 +21,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.navigationController.navigationBar.translucent = NO;
+
     [self.view addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_pattern_wood.png"]]];
+    [self.view addSubview:[[RecipeSegmentControl alloc] init]];
 }
 
 - (void)viewDidUnload
