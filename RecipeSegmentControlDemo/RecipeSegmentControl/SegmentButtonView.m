@@ -16,6 +16,8 @@
 @property(nonatomic, strong) UIImage *normalImage;
 @property(nonatomic, strong) UIImage *highlightImage;
 
+- (void)segmentTapped;
+
 @end
 
 @implementation SegmentButtonView
@@ -23,7 +25,7 @@
 @synthesize normalImage = _normalImage;
 @synthesize highlightImage = _highlightImage;
 @synthesize imageView = _imageView;
-
+@synthesize tapGestureRecognizer = _tapGestureRecognizer;
 
 - (SegmentButtonView *)initWithTitle:(NSString *)title
                          normalImage:(UIImage *)normalImage
@@ -40,9 +42,20 @@
                 self.normalImage.size.width, self.normalImage.size.height);
         [self addSubview:self.imageView];
 
+        // Listen to single tap on segment
+        self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(segmentTapped)];
+        [self addGestureRecognizer:self.tapGestureRecognizer];
+
         self.frame = CGRectMake(0, 0, normalImage.size.width, normalImage.size.height);
     }
     return self;
+}
+
+- (void)segmentTapped {
+}
+
+- (void)dealloc {
+    [self removeGestureRecognizer:self.tapGestureRecognizer];
 }
 
 @end
