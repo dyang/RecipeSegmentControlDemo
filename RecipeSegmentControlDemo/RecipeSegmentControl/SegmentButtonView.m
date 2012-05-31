@@ -16,7 +16,7 @@
 @property(nonatomic, strong) UIImageView *imageView;
 @property(nonatomic, strong) UIImage *normalImage;
 @property(nonatomic, strong) UIImage *highlightImage;
-@property(nonatomic, assign) id <SegmentButtonViewDelegate> delegate;
+@property(nonatomic, weak) id <SegmentButtonViewDelegate> delegate;
 
 - (void)expandSegment:(BOOL)animation;
 - (void)collapseSegment:(BOOL)animation;
